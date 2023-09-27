@@ -14,11 +14,11 @@ st.header("Graphische Darstellung von Nitratwerten")
 ############################## PLOT FEATURE VS DATETIME
 ## read in data
 #land_feature = pd.read_csv("C:\\Users\\4momina\\Desktop\\gameplan\\spolied_agriculture_extra_column_2.csv").dropna().groupby('Date')[
-    #'Nitrat level2'].sum().reset_index()
-land_feature = pd.read_csv("C:\\Users\\4momina\\Desktop\\gameplan\\spolied_agriculture_extra_column_2.csv").dropna()
-companies_feature = pd.read_csv("C:\\Users\\4momina\\Desktop\\gameplan\\spolied_companies_extra_column_2.csv").dropna()
-transport_feature = pd.read_csv("C:\\Users\\4momina\\Desktop\\gameplan\\spoiled_transport_extra_column_2.csv").dropna()
-water_feature = pd.read_csv("C:\\Users\\4momina\\Desktop\\gameplan\\fake_water_2.csv")
+    #'Nitrat level2'].sum().reset_index()  fake_water_2.csv
+land_feature = pd.read_csv("gameplan\\spolied_agriculture_extra_column_2.csv").dropna()
+companies_feature = pd.read_csv("gameplan\\spolied_companies_extra_column_2.csv").dropna()
+transport_feature = pd.read_csv("gameplan\\spoiled_transport_extra_column_2.csv").dropna()
+water_feature = pd.read_csv("gameplan\\fake_water_2.csv")
 land_feature['Date'] = pd.to_datetime(land_feature['Date'])
 companies_feature['Date'] = pd.to_datetime(companies_feature['Date'])
 transport_feature['Date'] = pd.to_datetime(transport_feature['Date'])
