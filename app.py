@@ -16,9 +16,9 @@ st.header("Graphische Darstellung von Nitratwerten")
 #land_feature = pd.read_csv("C:\\Users\\4momina\\Desktop\\gameplan\\spolied_agriculture_extra_column_2.csv").dropna().groupby('Date')[
     #'Nitrat level2'].sum().reset_index()  fake_water_2.csv
 land_feature = pd.read_csv("spolied_agriculture_extra_column_2.csv", sep = ",").dropna()
-companies_feature = pd.read_csv("https://github.com/4momina/gameplan/blob/main/spolied_agriculture_extra_column_2.csv").dropna()
-transport_feature = pd.read_csv("https://github.com/4momina/gameplan/blob/main/spolied_agriculture_extra_column_2.csv").dropna()
-water_feature = pd.read_csv("https://github.com/4momina/gameplan/blob/main/spolied_agriculture_extra_column_2.csvfake_water_2.csv")
+companies_feature = pd.read_csv("spolied_agriculture_extra_column_2.csv, sep = ","").dropna()
+transport_feature = pd.read_csv("spolied_agriculture_extra_column_2.csv, sep = ","").dropna()
+water_feature = pd.read_csv("fake_water_2.csv , sep = ","")
 land_feature['Date'] = pd.to_datetime(land_feature['Date'])
 companies_feature['Date'] = pd.to_datetime(companies_feature['Date'])
 transport_feature['Date'] = pd.to_datetime(transport_feature['Date'])
