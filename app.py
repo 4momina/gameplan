@@ -17,7 +17,7 @@ st.header("Graphische Darstellung von Nitratwerten")
     #'Nitrat level2'].sum().reset_index()  fake_water_2.csv
 land_feature = pd.read_csv("spolied_agriculture_extra_column_2.csv", sep = ",").dropna()
 companies_feature = pd.read_csv("spolied_agriculture_extra_column_2.csv, sep = ","").dropna()
-transport_feature = pd.read_csv("spolied_agriculture_extra_column_2.csv, sep = ","").dropna()
+transport_feature = pd.read_csv("spolied_agriculture_extra_column_2.csv, sep = ",").dropna()
 water_feature = pd.read_csv("fake_water_2.csv , sep = ","")
 land_feature['Date'] = pd.to_datetime(land_feature['Date'])
 companies_feature['Date'] = pd.to_datetime(companies_feature['Date'])
